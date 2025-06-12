@@ -1,0 +1,33 @@
+# Visual Studio
+.vs/
+*.vcxproj.user
+*.suo
+*.sdf
+*.cache
+*.dbmdl
+*.log
+*.ncb
+*.opendb
+*.pidb
+*.user
+*.userosscache
+*.sln.docstates
+
+# Build results
+Debug/
+Release/
+x64/
+x86/
+*.obj
+*.exe
+*.pdb
+*.ilk
+*.lib
+*.dll
+
+# Others
+*.bak
+*.tmp
+*.ipch
+*.aps
+*.pch
