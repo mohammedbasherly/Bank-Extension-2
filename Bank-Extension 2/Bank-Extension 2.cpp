@@ -5,12 +5,12 @@
 #include <vector>
 using namespace std;
 
-#include "C:\Programming\Libraries\clients_data.h"
+#include "clients_data.h"
 using namespace clients_data;
-#include "C:\Programming\Libraries\global_funcs.h"
+#include "global_funcs.h"
 using namespace global_funcs;
 
-#include "C:\Programming\Libraries\funcs.h"
+#include "funcs.h"
 
 enum enScreen
 {
