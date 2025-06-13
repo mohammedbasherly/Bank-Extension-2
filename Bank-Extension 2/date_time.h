@@ -7,9 +7,9 @@
 #include <string>
 using namespace std;
 
-#include "C:\Programming\Libraries\funcs.h";
-#include "C:\Programming\Libraries\global_funcs.h"
-#include "C:\Programming\Libraries\clients_data.h"
+#include "funcs.h";
+#include "global_funcs.h"
+#include "clients_data.h"
 
 enum enDateCompare { Before = -1, Equal = 0, After = 1 };
 
