@@ -7,8 +7,8 @@
 #include <vector>
 using namespace std;
 
-#include "C:\Programming\Libraries\global_funcs.h"
-#include "C:\Programming\Libraries\matrix_lib.h"
+#include "global_funcs.h"
+#include "matrix_lib.h"
 
 using namespace global_funcs;
 using namespace matrix_lib;
