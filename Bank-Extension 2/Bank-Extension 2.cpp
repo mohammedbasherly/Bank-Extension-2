@@ -5,12 +5,12 @@
 #include <vector>
 using namespace std;
 
-#include "clients_data.h"
+#include "C:\Programming\Libraries\clients_data.h"
 using namespace clients_data;
-#include "global_funcs.h"
+#include "C:\Programming\Libraries\global_funcs.h"
 using namespace global_funcs;
 
-#include "funcs.h"
+#include "C:\Programming\Libraries\funcs.h"
 
 enum enScreen
 {
@@ -41,6 +41,11 @@ enum enManageUsers
     FindUser = 5,
     ExitManageUsers = 6
 };
+
+/// /// /// ///
+
+string clientsDataFilePath = "Bank.txt";
+string usersDataFilePath = "Users.txt";
 
 /// /// /// ///
 
@@ -499,18 +504,16 @@ void startApp(short permissions, string filePath, string delim = "#//#")
 
 void login()
 {
-    string usersFilePath = "Users.txt";
     stUser user;
     showLoginScreenHeader();
     do
     {
         user.username = readString("username: ");
         user.password = readString("password: ");
-        if (isUserFound(usersFilePath, user))
+        if (isUserFound(usersDataFilePath, user))
         {
-            user = copyUserData(usersFilePath, user.username, "#//#");
-            string filePath = "Bank.txt";
-            startApp(user.permissions, filePath, "#//#");
+            user = copyUserData(usersDataFilePath, user.username, "#//#");
+            startApp(user.permissions, clientsDataFilePath, "#//#");
         }
         else
             cout << "Invalid username/password\n";
